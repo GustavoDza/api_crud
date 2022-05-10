@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "19f57947-245b-46ef-af47-7b6f7d4bb3bd",
+		"_postman_id": "675a2e0a-4108-462b-8dc8-63fc29204ecc",
 		"name": "API-CRUD",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -50,7 +50,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/products?nameProduct=Tenis",
+					"raw": "http://localhost:8080/products?nameProduct=Avental",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -62,7 +62,7 @@
 					"query": [
 						{
 							"key": "nameProduct",
-							"value": "Tenis"
+							"value": "Avental"
 						}
 					]
 				}
@@ -116,10 +116,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": " {\r\n        \"name\": \"Tenis\",\r\n        \"quantityStock\": 50,\r\n        \"unitPrice\": 50.0,\r\n        \"dateCreation\": \"2021-05-01T10:00:00\",\r\n        \"dateLastUpdate\": \"2022-05-01T16:00:00\",\r\n        \"supplierId\": {\r\n            \"id\": 2,\r\n            \"name\": \"Fornecedor de comidas\",\r\n            \"dateLastUpdate\": \"1999-11-10T15:00:00\",\r\n            \"dateCreation\": \"2021-05-02T17:30:00\"\r\n        }\r\n    }"
+					"raw": " {\r\n        \"name\": \"Banana\",\r\n        \"quantityStock\": 50,\r\n        \"unitPrice\": 2.50,\r\n        \"dateCreation\": \"2021-05-01T10:00:00\",\r\n        \"dateLastUpdate\": \"2022-05-01T16:00:00\",\r\n        \"supplierId\": {\r\n            \"id\": 2,\r\n            \"name\": \"Fornecedor de comidas\",\r\n            \"dateLastUpdate\": \"1999-11-10T15:00:00\",\r\n            \"dateCreation\": \"2021-05-02T17:30:00\"\r\n        }\r\n    }"
 				},
 				"url": {
-					"raw": "http://localhost:8080/products/4",
+					"raw": "http://localhost:8080/products/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -127,7 +127,7 @@
 					"port": "8080",
 					"path": [
 						"products",
-						"4"
+						"1"
 					]
 				}
 			},
@@ -149,7 +149,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/products/2",
+					"raw": "http://localhost:8080/products/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -157,7 +157,7 @@
 					"port": "8080",
 					"path": [
 						"products",
-						"2"
+						"4"
 					]
 				}
 			},
@@ -179,7 +179,7 @@
 					"raw": "{\r\n    \"quantityStock\": 10\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/products/4",
+					"raw": "http://localhost:8080/products/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -187,7 +187,7 @@
 					"port": "8080",
 					"path": [
 						"products",
-						"4"
+						"3"
 					]
 				}
 			},
@@ -206,10 +206,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"quantityStock\": 10\r\n}"
+					"raw": "{\r\n    \"quantityStock\": -10\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/products/4",
+					"raw": "http://localhost:8080/products/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -217,7 +217,7 @@
 					"port": "8080",
 					"path": [
 						"products",
-						"4"
+						"3"
 					]
 				}
 			},
